@@ -155,23 +155,23 @@
             margin: 40px 0;
         }
 
-        .whatsapp-button {
+        .telegram-button {
             display: inline-block;
             padding: 16px 35px;
-            background: #25D366;
+            background: #0088cc;
             color: white;
             text-decoration: none;
             border-radius: 30px;
             transition: all 0.3s;
-            border: 2px solid #25D366;
+            border: 2px solid #0088cc;
             font-size: 1.1em;
             margin: 15px;
             font-weight: 500;
         }
 
-        .whatsapp-button:hover {
+        .telegram-button:hover {
             background: transparent;
-            color: #25D366;
+            color: #0088cc;
             transform: translateY(-2px);
         }
 
@@ -211,12 +211,13 @@
         }
 
         .instructions {
-            background: #f0f7f1;
+            background: #f0f7f9;
             padding: 20px;
             border-radius: 8px;
             margin: 25px 0;
             text-align: left;
             font-size: 1em;
+            border-left: 4px solid #0088cc;
         }
 
         .quote {
@@ -242,7 +243,7 @@
             .invitation {
                 padding: 25px 20px;
             }
-            .whatsapp-button, .phone-button {
+            .telegram-button, .phone-button {
                 display: block;
                 margin: 15px auto;
                 width: 90%;
@@ -335,16 +336,19 @@
             <h3 style="margin-bottom: 25px; color: #3a3429; font-size: 1.4em;">Подтвердите ваше участие</h3>
 
             <div class="instructions">
-                <p><strong><i class="fas fa-comment-alt" style="margin-right: 10px;"></i> Как подтвердить через WhatsApp:</strong></p>
-                <p>1. Нажмите кнопку "Подтвердить через WhatsApp"</p>
-                <p>2. Дополните сообщение вашим именем и количеством гостей</p>
-                <p>3. Отправьте сообщение</p>
+                <p><strong><i class="fab fa-telegram" style="margin-right: 10px; color: #0088cc;"></i> Как подтвердить через Telegram:</strong></p>
+                <p>1. Нажмите кнопку "Написать в Telegram"</p>
+                <p>2. В открывшемся Telegram отправьте сообщение:</p>
+                <p style="background: #f8f8f8; padding: 10px; border-radius: 5px; margin: 10px 0;">
+                    <em>"Подтверждаю участие в юбилее Виктора Анатольевича. [Ваше имя], [кол-во гостей]"</em>
+                </p>
             </div>
 
-            <a href="https://wa.me/79041231925?text=Добрый%20день!%20Подтверждаю%20участие%20в%2070-летнем%20юбилее%20Виктора%20Анатольевича%20Садомцева%203%20января%202026%20года.%0A%0AМое%20имя:%20%0AКоличество%20гостей:%20%0A%0AС%20уважением,"
-               class="whatsapp-button"
+            <!-- Ссылка на Telegram по номеру телефона -->
+            <a href="https://t.me/+79041231925"
+               class="telegram-button"
                target="_blank">
-               <i class="fab fa-whatsapp" style="margin-right: 12px; font-size: 1.2em;"></i> Подтвердить через WhatsApp
+               <i class="fab fa-telegram" style="margin-right: 12px; font-size: 1.2em;"></i> Написать в Telegram
             </a>
 
             <br>
@@ -361,7 +365,7 @@
                     +7 (904) 123-19-25
                 </p>
                 <p style="text-align: center; margin-top: 5px; color: #7a6e5d;">
-                    (жена Виктора Анатольевича)
+                    (жена Виктора Анатольевича - Ольга)
                 </p>
             </div>
         </div>
