@@ -6,24 +6,39 @@
     <title>Приглашение на 70-летний юбилей Садомцева Виктора Анатольевича</title>
     <meta name="description" content="Приглашение на празднование 70-летнего юбилея Садомцева Виктора Анатольевича">
 
-    <!-- Open Graph мета-теги для красивой обложки в Telegram -->
+    <!-- Open Graph мета-теги для красивой обложки -->
     <meta property="og:title" content="Приглашение на 70-летний юбилей">
     <meta property="og:description" content="Приглашаем на празднование 70-летия Садомцева Виктора Анатольевича 3 января 2026 года">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bukh-sun.github.io/jubilee/">
+
+    <!-- ОСНОВНОЕ ИЗОБРАЖЕНИЕ ДЛЯ ПРЕВЬЮ -->
     <meta property="og:image" content="https://bukh-sun.github.io/jubilee/og-image.jpg">
+
+    <!-- Дополнительные мета для Telegram -->
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Приглашение на юбилей">
+
+    <!-- Для Telegram -->
+    <meta property="og:site_name" content="Юбилей Виктора Анатольевича">
     <meta property="og:locale" content="ru_RU">
 
-    <!-- Для Telegram и соцсетей -->
-    <meta property="og:site_name" content="Приглашение на юбилей">
+    <!-- Twitter Card (Telegram использует похожий формат) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Приглашение на 70-летний юбилей">
     <meta name="twitter:description" content="Приглашаем на празднование 70-летия Садомцева В.А.">
     <meta name="twitter:image" content="https://bukh-sun.github.io/jubilee/og-image.jpg">
+    <meta name="twitter:image:alt" content="Приглашение на юбилей">
+    <meta name="twitter:site" content="@invitation">
+
+    <!-- Дополнительные теги для лучшей совместимости -->
+    <meta name="theme-color" content="#b08d57">
+    <link rel="canonical" href="https://bukh-sun.github.io/jubilee/">
 
     <style>
+        /* Все стили остаются такими же как в предыдущем коде */
         * {
             margin: 0;
             padding: 0;
@@ -401,15 +416,10 @@
             const photo = document.getElementById('jubileePhoto');
             const placeholder = document.getElementById('photoPlaceholder');
 
-            // Проверка загрузки фото юбиляра
             photo.onerror = function() {
                 photo.style.display = 'none';
                 placeholder.style.display = 'flex';
             };
-
-            // Предзагрузка превью для кэша
-            const preloadImage = new Image();
-            preloadImage.src = 'og-image.jpg';
         });
     </script>
 </body>
